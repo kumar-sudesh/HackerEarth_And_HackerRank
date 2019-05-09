@@ -1520,7 +1520,7 @@ PreparedStatement pst;
         try{
             String value1 = jTextField1.getText();
             String value2 = jTextField42.getText();
-            String sql = "update account set Pin='"+value2+"' where Nmae = '"+value1+"'";
+            String sql = "update account set Pin='"+value2+"' where Name = '"+value1+"'";
             pst = conn.prepareStatement(sql);
             pst.execute();
             JOptionPane.showMessageDialog(null,"PIN Changed Successfully");
